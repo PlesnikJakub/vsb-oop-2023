@@ -12,4 +12,3 @@ public:
 	Car(string id);
 	string GetId();
 };
-
