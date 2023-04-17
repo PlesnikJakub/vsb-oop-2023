@@ -14,3 +14,7 @@ double Vehicle::GetMaxSpeed()
 {
 	return this->maxSpeed;
 }
+
+void Vehicle::Move()
+{
+}

@@ -8,5 +8,6 @@ public:
 	Vehicle();
 	Vehicle(double speed);
 	virtual double GetMaxSpeed();
+	void Move();
 };
 

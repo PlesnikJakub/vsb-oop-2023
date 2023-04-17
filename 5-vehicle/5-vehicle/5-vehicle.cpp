@@ -19,13 +19,12 @@ int main()
 
     /*******************************************************/
 
-    Rectangle* r = new Rectangle(2, 5);
-    std::cout << r->GetArea() << std::endl;
-    r->SayHi();
-
+    Rectangle* r = new Rectangle(3, 5);
     Shape* s = r;
+    std::cout << r->GetArea() << std::endl; // 15
+    std::cout << s->GetArea() << std::endl; // 15
 
-    std::cout << s->GetArea() << std::endl;
+
     // Shape* s = dynamic_cast<Shape*>(r);
     Triangle* t = new Triangle(2, 5);
     std::cout << t->GetArea() << std::endl;
