@@ -1,0 +1,49 @@
+1. Zadání (jiné než z přednášek) si vymyslíte sami, projekt ale musí obsahovat minimálně sedm tříd.
+
+2. Projekt bude obsahovat kompozice (hierarchie) objektů.
+- Faktura obsahuje seznam produktu a zákazníka
+- Banka obsahuje účty, učty obsahují zákazníky
+
+3. Projekt bude obsahovat a používat přetížené metody.
+foo()
+foo(int a)
+foo(string a)
+foo(int a, int b)
+foo(int a, string b)
+foo(string a, int b)
+
+4. Projekt bude obsahovat a používat třídu v roli objektu.
+použití klíčového slova static
+- sdílená promněná s výchozí hodnotou 
+- pomocné funkce
+
+5. Projekt bude obsahovat a využívat dědičnou hierarchii obsahující alespoň tři třídy.
+- A -> B -> C
+- A -> C, B -> C
+
+6. Dědičnost bude obsahovat a používat jak rozšíření (dat i metod), tak změnu chování s využitou pozdní vazbou.
+- Shadowing vs Overriding
+- Definice a použití Overridingu - metoda musí být definovaná jako virtuální
+
+7. Dědičná hierarchie bude obsahovat čistě abstraktní třídu.
+- třída která obsahuje použe metody bez definice (čistě virtuální metoda)
+- virtual double GetArea() = 0;
+
+8. Projekt bude využívat polymorfismus (polymorfní přiřazení i polymorfní datovou strukturu).
+polymorfní přiřazení
+- Přiřazení potomka do promněné typu předka
+- Rectangle* r = new Rectangle(2, 5);
+- Shape* s = r;
+
+polymorfní datovou strukturu
+- pole nebo jiná kolekce (vector) datového typu předka
+vector<Shape*> shapes;
+    shapes.push_back(r);
+    shapes.push_back(t);
+
+9. Po spuštění projektu bude vytvořeno alespoň několik desítek objektů zahrnujících objekty všech deklarovaných tříd (s výjimkou abstraktních) a ve výpisu na konzole budou prezentovány výsledky úloh, které objekty vykonají.
+
+- Všechny třídy budou mít anglický název ve svém vlastním souboru.
+- U každé třídy je vhodné také do poznámky v kódu krátce popsat, co třída reprezentuje.
+
+

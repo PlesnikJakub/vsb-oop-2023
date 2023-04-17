@@ -24,11 +24,12 @@ int main()
     r->SayHi();
 
     Shape* s = r;
+
     std::cout << s->GetArea() << std::endl;
     // Shape* s = dynamic_cast<Shape*>(r);
-
     Triangle* t = new Triangle(2, 5);
     std::cout << t->GetArea() << std::endl;
+
     Shape* s1 = t;
     std::cout << s1->GetArea() << std::endl;
 
@@ -40,6 +41,4 @@ int main()
     {
         cout << "Area: " << s->GetArea() << endl;
     }
-
-
 }
